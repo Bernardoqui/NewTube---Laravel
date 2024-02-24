@@ -5,22 +5,28 @@
 @layer base{
 
     h2{
-       @apply  bg-blue-700 text-3xl;
+        @apply  bg-blue-700 text-3xl;
     }
 }
 
 body{
     background: #220826;
 }
- 
-
-
 
 
 
 header{
 
     height: 9vh;
+
+    .logo{
+        background-image: linear-gradient(to right, #ee00ff, #6207fd);
+        -webkit-background-clip: text; /* Permite que o degradê apareça apenas onde o texto está */
+
+        i,p{
+            color: transparent; /* Torna o texto transparente para que o degradê seja visível */
+        }
+    }
 
     .slide-menu{
         height: 80vh;
@@ -32,15 +38,20 @@ header{
         transform: translateY(-96%);
         transition: transform 0.5s ease;
 
-        i{
+        a{
             cursor: pointer;
-            text-align: center;
-            line-height: 50px; /* Centraliza verticalmente o texto */
-            position: absolute;
-            left: 50%; /* Centraliza horizontalmente */
-            transform: translateX(-50%); /* Move para a esquerda metade da largura do próprio elemento */
-            bottom: 0; /* Encosta no fundo da div container */
+
+            i{
+                cursor: pointer;
+                text-align: center;
+                line-height: 50px; /* Centraliza verticalmente o texto */
+                position: absolute;
+                left: 50%; /* Centraliza horizontalmente */
+                transform: translateX(-50%); /* Move para a esquerda metade da largura do próprio elemento */
+                bottom: 0; /* Encosta no fundo da div container */
+            }
         }
+
 
         .closeMenu{
             display: none;
@@ -66,18 +77,18 @@ header{
 
 .mainHomePage{
     background: #2d0a31;
-    height: 300px;
     margin-top: 90px;
     border-radius: 25px;
 
     .cards{
         position: relative;
-        background: green;
+
         padding: 50px;
 
         .vid-card{
+            max-width: 350px;
 
-            background: red;
+            margin-bottom: 30px;
 
             .vid-img{
                 height: 200px;
@@ -102,6 +113,9 @@ header{
 
                 h3{
                     cursor: pointer;
+                    max-height: 3em; /* Defina a altura máxima desejada */
+                    overflow: hidden;
+                    color: white;
                 }
             }
         }

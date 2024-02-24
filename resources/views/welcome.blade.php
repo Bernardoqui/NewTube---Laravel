@@ -19,7 +19,7 @@
 
         <header>
             <nav class="h-screen flex items-center max-h-28 justify-between z-50 relative" style="background-color: #2d0a31">
-                <div class="flex items-center ml-10">
+                <div class="flex items-center ml-10 logo">
                     <i class="fa-solid fa-circle-play text-white text-6xl shadow-2xl m-2 "></i>
                     <p class="text-white text-4xl">Tube</p>
                 </div>
@@ -44,7 +44,8 @@
 
                 <div class="icons text-white text-3xl  mr-10">
                     <i class="fa-regular fa-bell shadow-2xl m-5 cursor-pointer"></i>
-                    <i class="fa-regular fa-user shadow-2xl m-5 cursor-pointer"></i>
+                    <a href="{{ url('/login') }}" class="{{ request()->is('login') ? 'active' : '' }}"><i class="fa-regular fa-user shadow-2xl m-5 cursor-pointer"></i></a>
+
                 </div>
             </nav>
 
@@ -55,7 +56,7 @@
                 <div class="relative top-1/4 flex justify-center">
                     <div class="menuLinks">
                         <ul>
-                            <li>HomePage</li>
+                            <li>DashboardPage</li>
                             <li>Subscricoes</li>
                             <li>Tendências</li>
                         </ul>
@@ -82,26 +83,79 @@
 
         <main class="mainHomePage">
 
-            <div class="cards flex justify-between">
+            <div class="cards flex justify-between flex-wrap text-white">
+
                 <div class="vid-card">
                     <img class="vid-img" src="/img/vid_test.png">
                     <div class="card-content">
                         <img src="/img/userimg.jpg">
-                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste</h3>
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
                     </div>
                 </div>
                 <div class="vid-card">
                     <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
                 </div>
                 <div class="vid-card">
                     <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
                 </div>
                 <div class="vid-card">
                     <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
                 </div>
                 <div class="vid-card">
                     <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
                 </div>
+                <div class="vid-card">
+                    <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
+                </div>
+                <div class="vid-card">
+                    <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
+                </div>
+                <div class="vid-card">
+                    <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
+                </div>
+                <div class="vid-card">
+                    <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
+                </div>
+                <div class="vid-card">
+                    <img class="vid-img" src="/img/vid_test.png">
+                    <div class="card-content">
+                        <img src="/img/userimg.jpg">
+                        <h3>Titulo teste Titulo teste Titulo teste Titulo teste itulo teste Titulo teste Titulo teste Titulo teste</h3>
+                    </div>
+                </div>
+
             </div>
 
 
